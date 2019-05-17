@@ -1,0 +1,68 @@
+1 - download jdk from this link:https://filehippo.com/download_java_development_kit_64/86378/
+
+2 - After run the jdk it will save C:\Program Files\Java this location
+
+3 - set the path same as in user veribles JAVA_HOME -- C:\Program Files\Java\jdk1.8.0_181
+                             system veribles path --- C:\Program Files\Java\jdk1.8.0_181\bin
+                             
+4 - download eclipse through this link https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2019-03/R/eclipse-inst-win64.exe
+
+                                              and extract it
+ 5- download selenium through this link https://www.seleniumhq.org/download/
+ 
+ 6 - chrome drivers throgh http://chromedriver.chromium.org/downloads 2.46
+ 
+ 7- download testNg 
+ 
+ appium 
+ 
+ 1-download sdk https://developer.android.com/studio/?gclid=CjwKCAjwlPTmBRBoEiwAHqpvhbOxKymKuiXJcLmiympxWl-sJw5VHUkf_GfSEOFoPKCSlI2BltDIZxoCLzMQAvD_BwE
+                     and extract it will save in C:\Program Files\Android
+                     if i open android studio sdk will download in C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk
+                     download buildtools and versions through android studio 
+                     it will save in platforms
+                     
+ 2- set the sdk path       user veriable - ANDROID_HOME C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk
+ 
+                           system veriable - same as userverible
+                           ANDROID_PLATFORMTOOLS -C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk\platform-tools
+                           path          -- %SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;D:\wamp64\bin\php\php7.0.4;C:\ProgramData\ComposerSetup\bin;C:\SWTOOLS\ReadyApps;C:\Program Files (x86)\nodejs\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jre1.8.0_181\bin;C:\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Users\sandeep.mandhala\Pictures\apache-jmeter-5.1\bin;C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk\platforms;C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk\platform-tools;C:\Users\sandeep.mandhala\AppData\Local\Android\Sdk\tools;
+                                         in path set all the platformtools and platforms and tools,
+  
+  3- download appium server through appium.io
+  
+       it i run it -- it will save in desktop 
+       
+       then open and set all the capbilities like in project 
+       
+     DesiredCapabilities capp = new DesiredCapabilities();
+		capp.setCapability("deviceName", "QKUSQ8ON7DTS6TFI");
+
+		capp.setCapability("platformVersion", "7.1");
+		capp.setCapability("platformName", "Android");
+		capp.setCapability("appPackage", "com.myntra.android");
+		capp.setCapability("appActivity", "com.myntra.android.SplashActivity");
+		// capp.setCapability("fullReset", true);
+
+		capp.setCapability("app", "C:\\Users\\sandeep.mandhala\\Desktop\\myntra.apk");
+
+		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capp);
+    
+    appium server capabilities
+    
+    {
+{
+  "platformName": "Android",
+  "platformVersion": "7.1",
+  "deviceName": "Android",
+  "udid": "QKUSQ8ON7DTS6TFI",
+  "appPackage": "com.myntra.android",
+  "app": "C:\\Users\\sandeep.mandhala\\Desktop\\myntra.apk",
+  "appActivity": "com.myntra.android.SplashActivity"
+  
+}
+app should be filepath 
+                                       
+                                            
+                                            
+                                            
